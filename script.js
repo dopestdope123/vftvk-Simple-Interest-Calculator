@@ -4,7 +4,6 @@ function compute() {
     var rate = parseFloat(document.getElementById("rate").value);
     var years = document.getElementById("years").value;
     var interest = principal * years * rate / 100;
-    var yearInTheFuture = new Date().getFullYear() + years;
     var year = new Date().getFullYear()+parseInt(years);
     document.getElementById("result").innerHTML = "Interest : If you deposit <mark>" + principal + "</mark>,<br/>" +
         "at an interest rate of <mark>" + rate + "</mark>,<br/>" +
